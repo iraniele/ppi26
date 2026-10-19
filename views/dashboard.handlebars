@@ -1,0 +1,11 @@
+<h2>Dashboard de Produtos</h2>
+
+<div class="produtos-container">
+    {{#each produtos}}
+    <div class="card">
+        <h3>{{this.nome}}</h3>
+        <p>Preço: R$ {{this.preco}}</p>
+        <a href="/produto/{{this.id}}">Ver detalhes</a>
+    </div>
+    {{/each}}
+</div>

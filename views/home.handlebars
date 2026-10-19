@@ -1,0 +1,9 @@
+<h2>Nossos Produtos</h2>
+<ul>
+    {{#each produtos}}
+    <li>
+        <strong>{{this.nome}}</strong> - R$ {{this.preco}}
+        <a href="/produto/{{this.id}}">Ver detalhes</a>
+    </li>
+    {{/each}}
+</ul>
